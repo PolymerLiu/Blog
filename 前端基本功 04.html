@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        *{padding: 0;margin: 0;}
+        a{text-decoration: none;}
+        ul{list-style: none;}
+        .fl{float: left;}
+        .fr{float: right;}
+        .cl{overflow: hidden;}
+/*
+        tab栏封装
+*/
+/*       .box{
+            width: 400px;
+            margin: 100px auto;
+            border: 1px solid red;
+        }
+        .top span{
+            display: inline-block;
+            width: 95px;
+            height: 30px;
+            line-height: 30px;
+            text-align: center;
+        }
+        .current{
+            background-color: pink;
+        }
+
+        .bottom li{
+            background-color: pink;
+            width: 400px;
+            height: 300px;
+            display: none;
+        }
+        .bottom .show{
+            display: block;
+        }*/
+/*
+        星座运势
+*/
+/*        dl{
+            width: 278px;
+            margin: 100px auto;
+            border: 1px solid yellowgreen;
+        }
+        dd{
+            padding: 10px 20px;
+        }
+        dt{
+            color: deepskyblue;
+            padding: 10px 0 0 20px;
+        }
+        .top .left{
+            width: 50px;
+            height: 50px;
+            background: url("img/sprite.png") no-repeat;
+            margin-right: 10px;
+        }
+        .bot{
+            padding-top: 10px;
+        }
+        .yunshi{
+            display: inline-block;
+            width: 80px;
+            height: 13px;
+            background: url("img/star.png") no-repeat left top;
+            position: relative;
+        }
+        .sta{
+            width: 80px;
+            height: 13px;
+            background: url("img/star.png") no-repeat left bottom;
+            position: absolute;
+            left: 0;
+            top: 0;
+        }
+        .bottom{
+            padding-top: 10px;
+        }
+        .bottom a{
+            display: inline-block;
+            text-decoration: none;
+            margin-top: -20px;
+        }*/
+/*
+        封装自己的class类函数
+*/
+        div{
+            width: 100px;
+            height: 100px;
+            background-color: pink;
+            margin-top: 10px;
+        }
+    </style>
+
+    <script>
+        window.onload=function () {
+//            tab栏封装，也就是对有多个结构相同的模块，用ID区分开来，并封装函数去调用
+/*            function tab(obj) {
+                var target = document.getElementById(obj);
+                var spans = target.getElementsByTagName("span");
+                var lis = target.getElementsByTagName("li");
+
+                for (var i = 0, len = spans.length; i < len; i++) {
+                    spans[i].index = i;
+                    spans[i].onmouseenter = function () {
+                        for (var j = 0, len = spans.length; j < len; j++) {
+                            spans[j].className = "";
+                            lis[j].className = "";
+                        }
+                        this.className = "current";
+                        lis[this.index].className = "show";
+                    }
+                }
+            }
+
+            tab("one");
+            tab("two");
+            tab("three");*/
+//            星座运势
+/*            function $(id) {
+                return document.getElementById(id);
+            }
+
+            var arr = [10, 9, 6, 7, 5,];
+            /!*该数组用来存放运势，如下同理。可以让下拉框的value值和其索引号相等*!/
+            var txtArr = ["今天白羊座可能会突然不想说话，不喜欢和别人交流。有写作、出版" +
+            "和宣传报道任务的白羊可能都进展...", "白羊座的内容", "金牛座的内容"];
+            $("sele").onchange = function () {
+                $("pic").style.backgroundPosition = "0 " + (-50 * this.value) + "px";
+                $("star").style.width = arr[this.value] * 8 + "px";
+                $("content").innerHTML = txtArr[this.value];
+            }*/
+//            封装自己的class类函数
+            function getClass(classname,id) {
+
+                /*如果浏览器支持，则直接返回*/
+                if(document.getElementsByClassName){
+                    if (id) {
+                        return document.getElementById(id).getElementsByClassName(classname);
+                    }else{
+                        return document.getElementsByClassName(classname);
+                    }
+                }
+
+                /*不支持的 浏览器*/
+                if(id){
+                    var ele=document.getElementById("id").getElementsByTagName("*");
+                }else{
+                    var ele = document.getElementsByTagName("*");
+                }
+                var arr = [];
+                for (var i = 0, len = ele.length; i < len; i++) {
+
+                    /*老版本*/
+                    /*if (ele[i].className === classname) {
+                     arr.push(ele[i]);
+                     }*/
+
+                    /*新版 优化，可判断一个class含有多个类名的情况*/
+                    var mutcla=ele[i].className.split(" ");//分割类名，并将其转换成数组
+                    for(var j=0,leng=mutcla.length;j<leng;j++){
+                        if(mutcla[i]===classname){
+                            arr.push(ele[i]); //我们是通过className来取其对应的div
+                        }
+                    }
+                }
+                return arr;
+            }
+
+            console.log(getClass("demo","cup").length);
+            var demo=getClass("demo","cup");
+            for(var i=0,len=demo.length;i<len;i++) {
+                demo[i].style.backgroundColor = "purple";
+            }
+        }
+    </script>
+</head>
+<body>
+<!--tab栏封装-->
+<!--<div class="box" id="one">
+    <div class="top">
+        <span class="current">娱乐</span>
+        <span>体育</span>
+        <span>新闻</span>
+        <span>电影</span>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li class="show">娱乐</li>
+            <li>体育</li>
+            <li>新闻</li>
+            <li>电影</li>
+        </ul>
+    </div>
+</div>
+<div class="box" id="two">
+    <div class="top">
+        <span class="current">娱乐</span>
+        <span>体育</span>
+        <span>新闻</span>
+        <span>电影</span>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li class="show">娱乐</li>
+            <li>体育</li>
+            <li>新闻</li>
+            <li>电影</li>
+        </ul>
+    </div>
+</div>
+<div class="box" id="three">
+    <div class="top">
+        <span class="current">娱乐</span>
+        <span>体育</span>
+        <span>新闻</span>
+        <span>电影</span>
+    </div>
+    <div class="bottom">
+        <ul>
+            <li class="show">娱乐</li>
+            <li>体育</li>
+            <li>新闻</li>
+            <li>电影</li>
+        </ul>
+    </div>
+</div>-->
+
+<!--星座运势-->
+<!--<dl>
+    <dt>星座运势</dt>
+    <dd>
+        <div class="top cl">
+            <div class="left fl" id="pic"></div>
+            <div class="right fl">
+                <select id="sele">
+                    <option value="0">射手座(11.23-12.21)</option>
+                    <option value="1">白羊座(10.23-04.21)</option>
+                    <option value="2">金牛座(05.23-06.21)</option>
+                </select>
+                <div class="bot">
+                    <div>
+                        今日运势：
+                        <span class="yunshi">
+                            <i class="sta" id="star"></i>
+                        </span>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="bottom cl">
+            <p class="fl" id="content">今天射手座与伴侣或合作伙伴的相处中也可能出现小人挑拨离间，造成关系不和。自己可能受到烂桃花...</p>
+            <a href="#" class="fr">[detail]</a>
+        </div>
+    </dd>
+</dl>-->
+
+<!--封装自己的class类函数-->
+    <div class="one two demo"></div>
+    <div class="demo"></div>
+    <section id="cup">
+        <div></div>
+        <div class="demo five"></div>
+        <div></div>
+        <div class="one three demo"></div>
+        <div class="demo"></div>
+        <div></div>
+        <div class="demo one"></div>
+    </section>
+    <div></div>
+</body>
+</html>
