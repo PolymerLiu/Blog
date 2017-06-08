@@ -67,5 +67,52 @@
      * 然后在外面调用这个内置函数
      */
 })();
-
 ```
+### 闭包优点：不会产生全局变量，实现属性私有化
+### 闭包缺点：闭包中的数据会常驻内存，在不用的时候要删掉否则会导致内存溢出
+
+# 对象
+
+## 基本数据类型
+* number string boolean null undefined (object 非基本数据类型)
+* 基本数据类型不能自定义属性和方法，，而对象可以
+
+## 声明对象
+* var obi = new Object();
+* var obj = {};    字面量式;  推荐
+
+## 自定义对象的属性、方法
+* var obj = {};
+
+* obj.age = 55;     //自定义属性
+* obj.age;     //调用属性
+
+* obj.showAge = function () {alert(55)};    //自定义方法
+* obj.showAge();   //调用方法
+
+## 封装对象
+```javascript
+(function (){
+    function person(name, age) {
+        var obj={};
+        obj.name=name;
+        obj.age=age;
+        obj.showName= function () {
+            console.log(""+name);
+        }
+        obj.showAge= function () {
+            console.log(""+age);
+        }
+        return obj;   // 最后一定要把这个对象返回
+    }
+
+    var xiaoming = person("小明",12);  //利用person函数来创建一个小明对象
+    console.log(xiaoming.name);   //调用xiaoming的name属性
+    console.log(xiaoming.age);
+    xiaoming.showAge();     //调用xiaoming的showAge()方法
+}) ();
+```
+
+## this new 
+```javascript
+

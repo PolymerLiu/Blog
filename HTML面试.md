@@ -1,3 +1,4 @@
+# 第一章节
 ## 1.几大浏览器对应的内核
 * IE-Trident
 * Chrome Safari-Webkit
@@ -37,3 +38,32 @@
 * 即使在没有样式CSS情况下也以一种文档格式显示，并且是容易阅读的;
 * 搜索引擎的爬虫也依赖于HTML标记来确定上下文和各个关键字的权重，利于SEO;
 * 使阅读源代码的人对网站更容易将网站分块，便于阅读维护理解。
+
+
+
+
+# 第二章节
+
+## 1.请描述一下 cookies，sessionStorage 和 localStorage 的区别？
+* cookie是网站为了标示用户身份而储存在用户本地终端（Client Side）上的数据（通常经过加密）。
+* cookie数据始终在同源的http请求中携带（即使不需要），记会在浏览器和服务器间来回传递。
+* sessionStorage和localStorage不会自动把数据发给服务器，仅在本地保存。
+* 存储大小：
+	* cookie数据大小不能超过4k。
+	* sessionStorage和localStorage 虽然也有存储大小的限制，但比cookie大得多，可以达到5M或更大。
+* 有期时间：
+	* localStorage    存储持久数据，浏览器关闭后数据不丢失除非主动删除数据；
+	* sessionStorage  数据在当前浏览器窗口关闭后自动删除。
+	* cookie          设置的cookie过期时间之前一直有效，即使窗口或浏览器关闭
+
+## 2.iframe有那些缺点？
+* iframe会阻塞主页面的Onload事件；
+* 搜索引擎的检索程序无法解读这种页面，不利于SEO;
+* iframe和主页面共享连接池，而浏览器对相同域的连接有限制，所以会影响页面的并行加载。
+* 使用iframe之前需要考虑这两个缺点。如果需要使用iframe，最好是通过javascript动态给iframe添加src属性值，这样可以绕开以上两个问题。
+
+## 3.如何实现浏览器内多个标签页之间的通信?
+* WebSocket、SharedWorker
+* 也可以调用localstorge、cookies等本地存储方式。
+* localstorge另一个浏览上下文里被添加、修改或删除时，它都会触发一个事件，我们通过监听事件，控制它的值来进行页面信息通信。
+
