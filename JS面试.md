@@ -50,6 +50,122 @@
 * call()的第一个参数是上下文，后续是实例传入的参数序列。
 * 如：function.call(this,1,2,3);
 
+# 第二章节
+## 1.JS数组去重(三种方法)
+```javascript
+<font size="3">Array.prototype.unique1 = function () {
+  var n = []; //一个新的临时数组
+  for (var i = 0; i < this.length; i++) //遍历当前数组
+  {
+    //如果当前数组的第i已经保存进了临时数组，那么跳过，
+    //否则把当前项push到临时数组里面
+    if (n.indexOf(this[i]) == -1) n.push(this[i]);
+  }
+  return n;
+}
+
+Array.prototype.unique2 = function()
+{
+    var n = {},r=[]; //n为hash表，r为临时数组
+    for(var i = 0; i < this.length; i++) //遍历当前数组
+    {
+        if (!n[this[i]]) //如果hash表中没有当前项
+        {
+            n[this[i]] = true; //存入hash表
+            r.push(this[i]); //把当前数组的当前项push到临时数组里面
+        }
+    }
+    return r;
+}
+
+Array.prototype.unique3 = function()
+{
+    var n = [this[0]]; //结果数组
+    for(var i = 1; i < this.length; i++) //从第二项开始遍历
+    {
+        //如果当前数组的第i项在当前数组中第一次出现的位置不是i，
+        //那么表示第i项是重复的，忽略掉。否则存入结果数组
+        if (this.indexOf(this[i]) == i) n.push(this[i]);
+    }
+    return n;
+}</font>
+```
+
+## 2.js操作获取和设置cookie
+```javascript
+<font size="3">//创建cookie
+function setCookie(name, value, expires, path, domain, secure) {
+    var cookieText = encodeURIComponent(name) + '=' + encodeURIComponent(value);
+    if (expires instanceof Date) {
+        cookieText += '; expires=' + expires;
+    }
+    if (path) {
+        cookieText += '; expires=' + expires;
+    }
+    if (domain) {
+        cookieText += '; domain=' + domain;
+    }
+    if (secure) {
+        cookieText += '; secure';
+    }
+    document.cookie = cookieText;
+}
+
+//获取cookie
+function getCookie(name) {
+    var cookieName = encodeURIComponent(name) + '=';
+    var cookieStart = document.cookie.indexOf(cookieName);
+    var cookieValue = null;
+    if (cookieStart > -1) {
+        var cookieEnd = document.cookie.indexOf(';', cookieStart);
+        if (cookieEnd == -1) {
+            cookieEnd = document.cookie.length;
+        }
+        cookieValue = decodeURIComponent(document.cookie.substring(cookieStart + cookieName.length, cookieEnd));
+    }
+    return cookieValue;
+}
+
+//删除cookie
+function unsetCookie(name) {
+    document.cookie = name + "= ; expires=" + new Date(0);
+}</font>
+```
+
+## 3.ajax 有那些优缺点?如何解决跨域问题?
+* 优点：
+	* （1）通过异步模式，提升了用户体验.
+	* （2）优化了浏览器和服务器之间的传输，减少不必要的数据往返，减少了带宽占用.
+	* （3）Ajax在客户端运行，承担了一部分本来由服务器承担的工作，减少了大用户量下的服务器负载。
+	* （4）Ajax可以实现动态不刷新（局部刷新）
+* 缺点：
+	* （1）安全问题 AJAX暴露了与服务器交互的细节。
+	* （2）对搜索引擎的支持比较弱。
+	* （3）不容易调试。
+* jsonp、 iframe、window.name、window.postMessage、服务器上设置代理页面。
+
+## 4.JavaScript原型，原型链 ? 有什么特点？
+* （1）原型对象也是普通的对象，是对象一个自带隐式的 __proto__ 属性，原型也有可能有自己的原型，如果一个原型对象的原型不为null的话，我们就称之为原型链。
+* （2）原型链是由一些用来继承和共享属性的对象组成的（有限的）对象链。
+
+## 5.GET和POST的区别，何时使用POST？
+* GET：一般用于信息获取，使用URL传递参数，对所发送信息的数量也有限制，一般在2000个字符
+* POST：一般用于修改服务器上的资源，对所发送的信息没有限制。
+* GET方式需要使用Request.QueryString来取得变量的值，而POST方式通过Request.Form来获取变量的值，也就是说Get是通过地址栏来传值，而Post是通过提交表单来传值。
+* 然而，在以下情况中，请使用 POST 请求：
+	* 无法使用缓存文件（更新服务器上的文件或数据库）
+	* 向服务器发送大量数据（POST 没有数据量限制）
+	* 发送包含未知字符的用户输入时，POST 比 GET 更稳定也更可靠
+
+## 6.请解释一下 JavaScript 的同源策略
+* 概念:同源策略是客户端脚本（尤其是Javascript）的重要的安全度量标准。它最早出自Netscape Navigator2.0，其目的是防止某个文档或脚本从多个不同源装载。
+* 这里的同源策略指的是：协议，域名，端口相同，同源策略是一种安全协议。
+* 指一段脚本只能读取来自同一来源的窗口和文档的属性。
+* 为什么要有同源限制？
+* 我们举例说明：比如一个黑客程序，他利用Iframe把真正的银行登录页面嵌到他的页面上，当你使用真实的用户名，密码登录时，他的页面就可以通过Javascript读取到你的表单中input中的内容，这样用户名，密码就轻松到手了。
+
+## 
+## 
 ## 
 ## 
 ## 
