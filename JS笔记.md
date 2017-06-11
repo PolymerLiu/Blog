@@ -1,3 +1,51 @@
+## javascript 代码运行分俩个阶段
+* 预解析 ---把所有函数定义(function () {})提前,所有的变量声明提前，变量的赋值不提前
+* 执行 --- 从上到下执行  (setTimeout,setInterval, ajax中的回掉函数，事件中的函数需要触发执行)
+ 
+## for 循环之闭包
+
+
+
+```javascript
+### 所有输出结果都为3版本
+
+var data = []; 
+for(var i = 0, i<3, i++){
+    data[i] = function(){
+        console.log(i);     //  这里只是声明了一个 函数，并未调用，无法使用for里边的i。。。。到for外边调用时，此时i已经变为3
+    }
+}
+// for 循环完毕之后，i的值变为3（为全局变量）
+data[0]();   //  3     data[0]=function(){console.log(i)  此i为for循环之外的i}
+data[1]();   //  3
+data[2]();   //  3
+```
+
+
+```javascript
+### 输出结果依次为0,1,2版本
+
+var data = [];
+for(var i = 0, i<3, i++){
+    data[i] = (function(k) {
+
+
+        return function () {
+            console.log(k);
+        }
+
+
+
+    }) (i);  // 此  i  为立即执行函数的的实际参数，，并把其值赋值给形式参数  k
+}
+// for 循环完毕之后，i的值变为3（为全局变量）
+data[0]();   //  0
+data[1]();   //  1
+data[2]();   //  2
+```
+
+
+
 ## 初识闭包
 ```javascript
 (function() {
@@ -112,6 +160,8 @@
     xiaoming.showAge();     //调用xiaoming的showAge()方法
 }) ();
 ```
+
+
 
 ## this new 
 ```javascript
