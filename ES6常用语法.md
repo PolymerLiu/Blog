@@ -17,7 +17,6 @@ while (true) {
 console.log(name)  //zach
 ```
 
-
 #### 第二个var带来的不合理场景就是用来计数的循环变量泄露为全局变量
 
 ```javascript
