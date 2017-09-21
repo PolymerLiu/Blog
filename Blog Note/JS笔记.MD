@@ -5,12 +5,10 @@
 ## for 循环之闭包
 
 
-
-```javascript
 ### 所有输出结果都为3版本
-
+```javascript
 var data = []; 
-for(var i = 0, i<3, i++){
+for(var i = 0, i < 3, i++){
     data[i] = function(){
         console.log(i);     //  这里只是声明了一个 函数，并未调用，无法使用for里边的i。。。。到for外边调用时，此时i已经变为3
     }
@@ -21,10 +19,8 @@ data[1]();   //  3
 data[2]();   //  3
 ```
 
-
-```javascript
 ### 输出结果依次为0,1,2版本
-
+```javascript
 var data = [];
 for(var i = 0, i<3, i++){
     data[i] = (function(k) {
