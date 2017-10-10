@@ -73,5 +73,58 @@ var colors3 = colors.slice(1,4) // ["green", "blue", "yellow"] 起始项到结�
 // 如果参数有负数，则参数加上数组长度。eg array.length=5, slice(-2,-1)与slice(3,4) 返回一样
 // 如果结束位置小于起始位置，则返回空数组。
 ```
-### splice()
-*
+
+
+
+
+# 5.3 Date 类型
+### 5.3.2 日期格式化方法
+#### Date 类型还有一些专门用于将日期格式化为字符串的方法，这些方法如下。
+ toDateString()——以特定于实现的格式显示星期几、月、日和年；
+ 
+ toTimeString()——以特定于实现的格式显示时、分、秒和时区；
+ 
+ toLocaleDateString()——以特定于地区的格式显示星期几、月、日和年；
+ 
+ toLocaleTimeString()——以特定于实现的格式显示时、分、秒；
+ 
+ toUTCString()——以特定于实现的格式完整的UTC 日期。
+ 
+ 与toLocaleString()和toString()方法一样，以上这些字符串格式方法的输出也是因浏览器而异的，因此没有哪一个方法能够用来在用户界面中显示一致的日期信息。
+
+
+
+
+
+# 5.4 RegExp 类型
+# 5.5 Function 类型 (无重载，即后声明的函数会覆盖前面声明的)
+> ### 由于函数是对象，因此函数名实际上也是一个指向函数对象的指针，不会与某个函数绑定.由于函数名仅仅是指向函数的指针，因此函数名与包含对象指针的其他变量没有什么不同。换句话说，一个函数可能会有多个名字
+```javascript
+function sum(num1, num2){
+    return num1 + num2;
+}
+alert(sum(10,10)); //20
+var anotherSum = sum; // 使用不带圆括号的函数名是访问函数指针，而非调用函数。此时，anotherSum 和sum 就都指向了同一个函数
+alert(anotherSum(10,10)); //20
+sum = null;     // 将sum 设置为null，让它与函数“断绝关系”，但仍然可以正常调用anotherSum()。
+alert(anotherSum(10,10)); //20
+```
+
+## 有三种定义函数的方法
+   ###function关键字法（函数声明法）// 这种方法声明的函数会被解析器优先读取，使其在任何地方都可被调用
+   ```javascript
+    function sum (num1, num2) {
+        return num1 + num2;
+    }
+```
+   ###函数表达式法 // 表达式法则要等解析到此处时才生效    ,在执行到函数所在的语句之前，变量sum 中不会保存有对函数的引用
+   ```javascript
+    var sum = function(num1, num2){
+        return num1 + num2;
+    };
+```
+   ###Function 构造函数法    （不推荐）
+   ```javascript3
+    var sum = new Function("num1", "num2", "return num1 + num2"); 
+```
+

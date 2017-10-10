@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="90871592-a86e-454d-bec4-ed6d7e9e09fb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Blog Note/JS Array.MD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Blog Note/JS String.MD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Blog Note/原生JS forEach()和map()遍历的区别以及兼容写法.MD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/高程Note/Chapter6 面向对象的程序设计.MD" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/CSS面试.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/ES6常用语法.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/HTML面试.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JS笔记.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/JS面试.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/flex 布局.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/其他面试.MD" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/定位.md" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/居中案例.md" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Blog Note/flex 布局.MD" afterPath="$PROJECT_DIR$/Blog Note/flex 布局.MD" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD" afterPath="$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -34,8 +23,8 @@
         <entry file="file://$PROJECT_DIR$/Blog Note/JS String.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="228">
-                <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+              <first_editor relative-caret-position="756">
+                <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
                 <folding />
               </first_editor>
               <second_editor />
@@ -43,14 +32,54 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="JS Array.MD" pinned="false" current-in-tab="true">
+      <file leaf-file-name="JS Array.MD" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Blog Note/JS Array.MD">
           <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
             <state split_layout="FIRST">
-              <first_editor relative-caret-position="209">
-                <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+              <first_editor relative-caret-position="1491">
+                <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
                 <folding>
                   <marker date="1505983896532" expanded="true" signature="1236:1375" ph="//..." />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Chapter5  引用类型.MD" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="FIRST">
+              <first_editor relative-caret-position="-400">
+                <caret line="74" column="3" lean-forward="false" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+                <folding>
+                  <marker date="1506501687177" expanded="true" signature="206:237" ph="{&quot;name&quot;: &quot;Nicholas&quot;...}" />
+                  <marker date="1506501687177" expanded="true" signature="2214:2329" ph="//..." />
+                  <marker date="1506501687177" expanded="true" signature="2214:2353" ph="//..." />
+                  <marker date="1506501687177" expanded="true" signature="2936:2963" ph="{...}" />
+                  <marker date="1506501687177" expanded="true" signature="3324:3359" ph="{...}" />
+                  <marker date="1506501687177" expanded="true" signature="3485:3520" ph="{...}" />
+                </folding>
+              </first_editor>
+              <second_editor />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="flex 布局.MD" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Blog Note/flex 布局.MD">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="672">
+                <caret line="95" column="3" lean-forward="true" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
+                <folding>
+                  <marker date="1507636230791" expanded="true" signature="1312:1329" ph="{...}" />
+                  <marker date="1507636230791" expanded="true" signature="1405:1445" ph="{...}" />
+                  <marker date="1507636230791" expanded="true" signature="1620:1662" ph="{...}" />
+                  <marker date="1507636230791" expanded="true" signature="1877:1919" ph="{...}" />
+                  <marker date="1507636230791" expanded="true" signature="2079:2150" ph="{...}" />
+                  <marker date="1507636230791" expanded="true" signature="2409:2482" ph="{...}" />
                 </folding>
               </first_editor>
               <second_editor />
@@ -62,6 +91,9 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Blog Note/flex 布局.MD" root0="SKIP_INSPECTION" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -76,6 +108,7 @@
         <option value="$PROJECT_DIR$/Blog Note/JS String.MD" />
         <option value="$PROJECT_DIR$/Blog Note/JS Array.MD" />
         <option value="$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD" />
+        <option value="$PROJECT_DIR$/Blog Note/flex 布局.MD" />
       </list>
     </option>
   </component>
@@ -109,6 +142,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -152,7 +186,6 @@
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -264,18 +297,28 @@
       <workItem from="1505874663739" duration="8198000" />
       <workItem from="1505892322210" duration="2303000" />
       <workItem from="1505982164628" duration="1252000" />
-      <workItem from="1505983617955" duration="1734000" />
+      <workItem from="1505983617955" duration="2391000" />
+      <workItem from="1506327944886" duration="362000" />
+      <workItem from="1506416380716" duration="2741000" />
+      <workItem from="1506500188340" duration="1748000" />
+      <workItem from="1506507513614" duration="15000" />
+      <workItem from="1506579943908" duration="615000" />
+      <workItem from="1506581273756" duration="54000" />
+      <workItem from="1506581433607" duration="1266000" />
+      <workItem from="1507631446590" duration="5065000" />
+      <workItem from="1507636543414" duration="914000" />
+      <workItem from="1507639963072" duration="37000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="37126000" />
+    <option name="totallyTimeSpent" value="50600000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1358" y="-8" width="1936" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24270834" sideWeight="0.4945055" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1875" sideWeight="0.4945055" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Debug Logs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3287879" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -307,6 +350,253 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS Array.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1491">
+            <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+            <folding>
+              <marker date="1505983896532" expanded="true" signature="1236:1375" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="2373">
+            <caret line="113" column="49" lean-forward="false" selection-start-line="113" selection-start-column="49" selection-end-line="113" selection-end-column="49" />
+            <folding>
+              <marker date="1506501687177" expanded="true" signature="206:237" ph="{&quot;name&quot;: &quot;Nicholas&quot;...}" />
+              <marker date="1506501687177" expanded="true" signature="2214:2329" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2214:2353" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2936:2963" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3324:3359" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3485:3520" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS String.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="756">
+            <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS Array.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1491">
+            <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+            <folding>
+              <marker date="1505983896532" expanded="true" signature="1236:1375" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="2667">
+            <caret line="127" column="66" lean-forward="true" selection-start-line="127" selection-start-column="66" selection-end-line="127" selection-end-column="66" />
+            <folding>
+              <marker date="1506501687177" expanded="true" signature="206:237" ph="{&quot;name&quot;: &quot;Nicholas&quot;...}" />
+              <marker date="1506501687177" expanded="true" signature="2214:2329" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2214:2353" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2936:2963" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3324:3359" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3485:3520" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS String.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="756">
+            <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS Array.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1491">
+            <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+            <folding>
+              <marker date="1505983896532" expanded="true" signature="1236:1375" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="2226">
+            <caret line="106" column="40" lean-forward="true" selection-start-line="106" selection-start-column="40" selection-end-line="106" selection-end-column="40" />
+            <folding>
+              <marker date="1506501687177" expanded="true" signature="206:237" ph="{&quot;name&quot;: &quot;Nicholas&quot;...}" />
+              <marker date="1506501687177" expanded="true" signature="2214:2329" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2214:2353" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2936:2963" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3324:3359" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3485:3520" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS String.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS Array.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1491">
+            <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+            <folding>
+              <marker date="1505983896532" expanded="true" signature="1236:1375" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="2646">
+            <caret line="126" column="17" lean-forward="false" selection-start-line="126" selection-start-column="17" selection-end-line="126" selection-end-column="17" />
+            <folding>
+              <marker date="1506501687177" expanded="true" signature="206:237" ph="{&quot;name&quot;: &quot;Nicholas&quot;...}" />
+              <marker date="1506501687177" expanded="true" signature="2214:2329" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2214:2353" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2936:2963" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3324:3359" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3485:3520" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS String.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="756">
+            <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS Array.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="1491">
+            <caret line="71" column="6" lean-forward="true" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
+            <folding>
+              <marker date="1505983896532" expanded="true" signature="1236:1375" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="2373">
+            <caret line="113" column="18" lean-forward="true" selection-start-line="113" selection-start-column="18" selection-end-line="113" selection-end-column="18" />
+            <folding>
+              <marker date="1506501687177" expanded="true" signature="206:237" ph="{&quot;name&quot;: &quot;Nicholas&quot;...}" />
+              <marker date="1506501687177" expanded="true" signature="2214:2329" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2214:2353" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2936:2963" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3324:3359" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3485:3520" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS String.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="756">
+            <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS Array.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="672">
+            <caret line="32" column="13" lean-forward="true" selection-start-line="32" selection-start-column="13" selection-end-line="32" selection-end-column="13" />
+            <folding>
+              <marker date="1505983896532" expanded="true" signature="1236:1375" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS String.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="756">
+            <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+            <folding />
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/JS Array.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="357">
+            <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+            <folding>
+              <marker date="1505983896532" expanded="true" signature="1236:1375" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Blog Note/JS String.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="SPLIT">
@@ -580,24 +870,9 @@
     <entry file="file://$PROJECT_DIR$/Blog Note/JS String.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="228">
-            <caret line="36" column="31" lean-forward="true" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
+          <first_editor relative-caret-position="756">
+            <caret line="36" column="31" lean-forward="false" selection-start-line="36" selection-start-column="31" selection-end-line="36" selection-end-column="31" />
             <folding />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="FIRST">
-          <first_editor relative-caret-position="327">
-            <caret line="46" column="57" lean-forward="true" selection-start-line="46" selection-start-column="57" selection-end-line="46" selection-end-column="57" />
-            <folding>
-              <marker date="1505984881474" expanded="true" signature="206:237" ph="{&quot;name&quot;: &quot;Nicholas&quot;...}" />
-              <marker date="1505984881474" expanded="true" signature="2214:2329" ph="//..." />
-              <marker date="1505984881474" expanded="true" signature="2214:2353" ph="//..." />
-            </folding>
           </first_editor>
           <second_editor />
         </state>
@@ -606,10 +881,46 @@
     <entry file="file://$PROJECT_DIR$/Blog Note/JS Array.MD">
       <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
         <state split_layout="FIRST">
-          <first_editor relative-caret-position="209">
-            <caret line="17" column="36" lean-forward="true" selection-start-line="17" selection-start-column="36" selection-end-line="17" selection-end-column="36" />
+          <first_editor relative-caret-position="1491">
+            <caret line="71" column="6" lean-forward="false" selection-start-line="71" selection-start-column="6" selection-end-line="71" selection-end-column="6" />
             <folding>
               <marker date="1505983896532" expanded="true" signature="1236:1375" ph="//..." />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Blog Note/flex 布局.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="672">
+            <caret line="95" column="3" lean-forward="true" selection-start-line="95" selection-start-column="3" selection-end-line="95" selection-end-column="3" />
+            <folding>
+              <marker date="1507636230791" expanded="true" signature="1312:1329" ph="{...}" />
+              <marker date="1507636230791" expanded="true" signature="1405:1445" ph="{...}" />
+              <marker date="1507636230791" expanded="true" signature="1620:1662" ph="{...}" />
+              <marker date="1507636230791" expanded="true" signature="1877:1919" ph="{...}" />
+              <marker date="1507636230791" expanded="true" signature="2079:2150" ph="{...}" />
+              <marker date="1507636230791" expanded="true" signature="2409:2482" ph="{...}" />
+            </folding>
+          </first_editor>
+          <second_editor />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/高程Note/Chapter5  引用类型.MD">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="FIRST">
+          <first_editor relative-caret-position="-400">
+            <caret line="74" column="3" lean-forward="false" selection-start-line="74" selection-start-column="3" selection-end-line="74" selection-end-column="3" />
+            <folding>
+              <marker date="1506501687177" expanded="true" signature="206:237" ph="{&quot;name&quot;: &quot;Nicholas&quot;...}" />
+              <marker date="1506501687177" expanded="true" signature="2214:2329" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2214:2353" ph="//..." />
+              <marker date="1506501687177" expanded="true" signature="2936:2963" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3324:3359" ph="{...}" />
+              <marker date="1506501687177" expanded="true" signature="3485:3520" ph="{...}" />
             </folding>
           </first_editor>
           <second_editor />
